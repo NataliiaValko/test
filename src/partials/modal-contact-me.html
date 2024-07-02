@@ -1,0 +1,58 @@
+<div class="modal-contact-me-backdrop" id="modal-contact-me-backdrop">
+  <div class="modal-contact-me">
+    <button
+      type="button"
+      class="modal-contact-me-close-button"
+      id="modal-contact-me-close"
+      aria-label="Кнопка для закриття модального вікна"
+    >
+      <svg width="40" height="40" class="icon-close-svg">
+        <use
+          href="./img/modal-contact-me/icons/modal-sprite.svg#icon-close"
+        ></use>
+      </svg>
+    </button>
+
+    <strong class="modal-contact-me-modal-title">Дізнатися більше</strong>
+
+    <form class="modal-contact-me-modal-form" id="modal-contact-me-form">
+      <div class="modal-contact-me-form-input-box">
+        <label for="inputName" class="visually-hidden">Iмʼя*</label>
+        <input
+          class="modal-contact-me-form-input"
+          type="text"
+          name="name"
+          id="inputName"
+          placeholder="Iмʼя*"
+          minlength="2"
+          maxlength="50"
+          required
+          title="Введіть коректне значення (максимум 50 символів)"
+        />
+        <label for="inputPhone" class="visually-hidden">Номер телефону*</label>
+        <input
+          class="modal-contact-me-form-input"
+          type="tel"
+          name="phone"
+          id="inputPhone"
+          placeholder="Номер телефону*"
+          pattern="^\+?[0-9\s\-\(\)]{10,18}$"
+          required
+          title="Введіть коректний номер телефону"
+        />
+        <label for="inputMessage" class="visually-hidden">Повідомлення</label>
+        <textarea
+          class="modal-contact-me-form-input modal-contact-me-form-textarea"
+          name="message"
+          id="inputMessage"
+          placeholder="Повідомлення"
+          maxlength="150"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="button-dark modal-contact-me-button">
+        Зв’язатися з нами
+      </button>
+    </form>
+  </div>
+</div>

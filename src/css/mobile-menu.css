@@ -1,0 +1,69 @@
+.mobile-menu-backdrop {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: opacity var(--time-function), visibility var(--time-function);
+
+  background: rgba(193, 193, 193, 0.8);
+
+  &.is-open {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 1;
+  width: 320px;
+  height: 100%;
+  padding: 80px 40px 40px 40px;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+
+  background-color: var(--main);
+}
+
+.mobile-menu-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.mobile-social-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.mobile-social-list li {
+  padding: 8px;
+}
+.mobile-social-link {
+  display: flex;
+}

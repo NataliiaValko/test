@@ -1,0 +1,36 @@
+/* ticker */
+
+.ticker {
+  padding: 24px 0;
+  background-color: var(--blue);
+}
+.marquee {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.maquee-title {
+  position: relative;
+  margin-left: 75px;
+  display: inline-block;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 110%;
+  color: var(--main);
+  &::after {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    z-index: 0;
+    width: 43px;
+    height: 1px;
+    background-color: var(--main);
+  }
+}
+.marquee .marquee-text {
+  white-space: nowrap;
+  text-transform: uppercase;
+}

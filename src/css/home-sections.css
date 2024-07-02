@@ -1,0 +1,975 @@
+.home-section {
+  position: relative;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 57px;
+    left: 0;
+
+    width: 100vw;
+    height: 179px;
+
+    background-color: var(--main);
+
+    z-index: -1;
+  }
+
+  @media screen and (min-width: 834px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &::after {
+      top: 263px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.home-section-wrapper {
+  @media screen and (min-width: 834px) {
+    padding-left: 153px;
+  }
+}
+
+.home-section-title {
+  position: relative;
+
+  margin-bottom: 52px;
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 78%;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  color: var(--main);
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    width: 123px;
+    height: 2px;
+
+    background-color: var(--main);
+    border-radius: 2px;
+  }
+
+  @media screen and (min-width: 834px) {
+    margin-bottom: 25px;
+
+    font-size: 40px;
+    line-height: 112%;
+
+    &::after {
+      top: 25px;
+      left: -153px;
+    }
+  }
+}
+
+.home-section-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  color: var(--additional);
+}
+
+/* About section */
+
+.home-about {
+  padding-top: 26px;
+  overflow: hidden;
+
+  @media screen and (min-width: 834px) {
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+
+    & .home-section-wrapper {
+      position: relative;
+
+      width: 531px;
+
+      padding-left: 0;
+      margin-left: 153px;
+
+      &::after {
+        content: 'Наша церква';
+
+        position: absolute;
+        bottom: -20px;
+        left: -163px;
+
+        width: 580px;
+
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 180%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--bright-blue);
+        opacity: 0.08;
+      }
+    }
+
+    &::after {
+      left: 925px;
+      display: none;
+    }
+  }
+}
+
+.home-about-container {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    gap: 73px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.home-about-img-wrapper {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 177px;
+      left: 0;
+
+      width: 100vw;
+      height: 179px;
+
+      background-color: var(--main);
+      z-index: -1;
+    }
+  }
+}
+
+.home-about-img {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 834px) {
+    width: 700px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 521px;
+  }
+}
+
+.home-about-text {
+  margin-bottom: 25px;
+}
+
+.home-about-btn {
+  @media screen and (min-width: 834px) {
+    width: 250px;
+  }
+}
+
+/* Creed section */
+
+.home-creed {
+  overflow: hidden;
+  &::after {
+    top: 52px;
+
+    background-color: var(--bright-blue);
+  }
+
+  @media screen and (min-width: 834px) {
+    &::after {
+      top: 254px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &::after {
+      display: none;
+    }
+
+    & .home-section-wrapper {
+      position: relative;
+
+      width: 478px;
+      padding-left: 0;
+      align-self: end;
+
+      &::before {
+        content: 'Ми віримо';
+
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 180%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--bright-blue);
+        opacity: 0.08;
+      }
+    }
+  }
+}
+
+.home-creed-container {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.home-creed-img-wrapper {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 233px;
+      right: 0;
+
+      width: 100vw;
+      height: 179px;
+
+      background-color: var(--bright-blue);
+
+      z-index: -1;
+    }
+  }
+}
+
+.home-creed-img {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 834px) {
+    width: 700px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 0;
+
+    width: 712px;
+  }
+}
+
+.home-creed-title {
+  @media screen and (min-width: 1440px) {
+    &::after {
+      left: 270px;
+    }
+  }
+}
+
+.home-creed-text {
+  margin-bottom: 25px;
+}
+
+.home-creed-btn {
+  @media screen and (min-width: 834px) {
+    width: 250px;
+  }
+}
+
+/* Gallery section */
+
+.home-gallery {
+  padding: 20px 0;
+
+  @media screen and (min-width: 834px) {
+    padding: 40px 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 50px 0;
+
+    & .home-section-wrapper {
+      padding-left: 0;
+      margin-left: 153px;
+      margin-bottom: 56px;
+
+      width: 457px;
+    }
+  }
+}
+
+.home-gallery-container {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &::after {
+      content: 'Наші фото';
+
+      position: absolute;
+      top: 120px;
+      right: 35px;
+
+      width: 500px;
+
+      font-weight: 600;
+      font-size: 80px;
+      line-height: 180%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--bright-blue);
+      opacity: 0.08;
+    }
+  }
+}
+
+.home-gallery-swiper {
+  overflow: hidden;
+}
+
+.home-gallery-list {
+  display: flex;
+
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 1440px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 27px;
+
+    margin-bottom: 0;
+  }
+}
+
+.home-gallery-item {
+  position: relative;
+
+  width: 280px;
+  height: 210px;
+
+  flex-shrink: 0;
+
+  @media screen and (min-width: 834px) {
+    width: 700px;
+    height: 393px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    &:first-child {
+      width: 858px;
+    }
+    width: 415px;
+  }
+}
+
+.home-gallery-img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-gallery-item-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+
+  color: var(--white);
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 122%;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1440px) {
+    bottom: 30px;
+    left: 30px;
+  }
+}
+
+.home-gallery-item-text-line {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-left: 10px;
+
+  width: 53px;
+  height: 2px;
+
+  background-color: var(--white);
+  border-radius: 2px;
+}
+
+.pray-line {
+  width: 35px;
+
+  @media screen and (min-width: 834px) {
+    width: 53px;
+  }
+}
+
+.home-gallery-nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.home-gallery-nav-btn {
+  width: 52px;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+  background-color: var(--bright-blue);
+  border: none;
+}
+
+.home-gallery-nav-btn-icon {
+  stroke: #fdfdff;
+  fill: transparent;
+}
+
+.home-gallery-text {
+  margin-bottom: 25px;
+}
+
+.home-gallery-btn {
+  display: block;
+  text-align: center;
+  @media screen and (min-width: 834px) {
+    width: 250px;
+  }
+}
+
+/* Encounter section */
+
+.home-encounter {
+  overflow: hidden;
+  &::after {
+    top: 51px;
+  }
+
+  @media screen and (min-width: 834px) {
+    &::after {
+      top: 254px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &::after {
+      display: none;
+    }
+
+    & .home-section-wrapper {
+      width: 495px;
+
+      padding-left: 0;
+      margin-left: 153px;
+
+      align-self: start;
+    }
+  }
+}
+
+.home-encounter-container {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &::after {
+      content: 'Зустріч з богом';
+
+      position: absolute;
+      bottom: -15px;
+      left: 70px;
+
+      width: 705px;
+
+      font-weight: 600;
+      font-size: 80px;
+      line-height: 180%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--bright-blue);
+      opacity: 0.08;
+    }
+  }
+}
+
+.home-encounter-img-wrapper {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 257px;
+      left: 0;
+
+      width: 100vw;
+      height: 179px;
+
+      background-color: var(--main);
+
+      z-index: -1;
+    }
+  }
+}
+
+.home-encounter-img {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 834px) {
+    width: 700px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 517px;
+  }
+}
+
+.home-encounter-text {
+  margin-bottom: 25px;
+}
+
+.home-encounter-btn {
+  text-align: center;
+  display: block;
+  @media screen and (min-width: 834px) {
+    width: 250px;
+  }
+}
+
+/* Our team section */
+
+.home-our-team {
+  position: relative;
+  padding: 20px 0;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 302px;
+    left: 0;
+
+    width: 100%;
+    height: 179px;
+
+    background-color: var(--main);
+
+    z-index: -1;
+  }
+
+  @media screen and (min-width: 834px) {
+    padding: 40px 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 50px 0;
+  }
+}
+
+.home-our-team-container {
+  position: relative;
+}
+
+.home-our-team-text {
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 834px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 56px;
+  }
+}
+
+.home-our-team-swiper {
+  width: 280px;
+  overflow: hidden;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 834px) {
+    width: 644px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1291px;
+  }
+}
+
+.home-our-team-list {
+  display: flex;
+}
+
+.home-our-team-item {
+  width: 280px;
+  height: 391px;
+
+  flex-shrink: 0;
+
+  @media screen and (min-width: 834px) {
+    width: 308px;
+    height: 391px;
+  }
+}
+
+.home-our-team-item-img {
+  width: 280px;
+  height: 309px;
+  object-fit: cover;
+
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 834px) {
+    width: 307px;
+    height: 309px;
+  }
+}
+
+.home-our-team-item-text {
+  position: relative;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 156%;
+  color: var(--main);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -12px;
+    left: 0;
+
+    width: 151px;
+    height: 2px;
+
+    background-color: var(--main);
+    border-radius: 2px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 307px;
+  }
+}
+
+.home-our-team-nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  @media screen and (min-width: 834px) {
+    position: absolute;
+    top: 4px;
+    right: 48px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 4px;
+    right: 61px;
+  }
+}
+
+.home-our-team-nav-btn {
+  width: 52px;
+
+  padding: 6px 16px;
+
+  border-radius: 8px;
+  background-color: var(--bright-blue);
+  border: none;
+}
+
+.home-our-team-nav-btn-icon {
+  stroke: #fdfdff;
+  fill: transparent;
+}
+
+/* Pastor section */
+
+.home-pastor {
+  padding-bottom: 40px;
+  overflow: hidden;
+  &::after {
+    top: 52px;
+
+    background-color: var(--bright-blue);
+  }
+
+  @media screen and (min-width: 834px) {
+    padding-bottom: 80px;
+
+    &::after {
+      top: 253px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 80px;
+
+    &::after {
+      display: none;
+    }
+
+    & .home-section-wrapper {
+      width: 658px;
+
+      padding-left: 0;
+      align-self: end;
+    }
+  }
+}
+
+.home-pastor-container {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: 'Пастор церкви';
+
+      width: 660px;
+
+      position: absolute;
+      top: 110px;
+      right: 70px;
+
+      font-weight: 600;
+      font-size: 80px;
+      line-height: 180%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--bright-blue);
+      opacity: 0.08;
+    }
+  }
+}
+
+.home-pastor-img-wrapper {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 263px;
+      right: 0;
+
+      width: 100vw;
+      height: 179px;
+
+      background-color: var(--bright-blue);
+
+      z-index: -1;
+    }
+  }
+}
+
+.home-pastor-img {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 834px) {
+    width: 700px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 522px;
+    margin-bottom: 0;
+  }
+}
+
+.home-pastor-title {
+  @media screen and (min-width: 1440px) {
+    &::after {
+      left: 270px;
+    }
+  }
+}
+
+.home-pastor-text {
+  margin-bottom: 25px;
+}
+
+.home-pastor-btn {
+  @media screen and (min-width: 834px) {
+    width: 250px;
+  }
+}
+
+/* Contacts section */
+
+.home-contacts {
+  position: relative;
+
+  @media screen and (min-width: 834px) {
+    padding-bottom: 279px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 100px;
+  }
+}
+.home-contacts-thumb {
+  position: relative;
+  padding: 0;
+}
+
+.home-contacts-container {
+  @media screen and (min-width: 834px) {
+    display: flex;
+
+    width: 746px;
+
+    position: absolute;
+    top: 329px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 50px;
+    transform: translateX(0);
+    left: auto;
+    right: 70px;
+  }
+}
+
+.home-contacts-map {
+  width: 100%;
+
+  @media screen and (min-width: 1440px) {
+    width: 866px;
+  }
+}
+
+.home-contacts-wrapper {
+  padding: 30px 16px;
+
+  background-color: var(--main);
+
+  color: var(--white);
+
+  @media screen and (min-width: 834px) {
+    width: 371px;
+
+    padding: 25px 37px 33px;
+  }
+}
+
+.home-contacts-title {
+  margin-bottom: 16px;
+
+  line-height: 141%;
+  color: inherit;
+  text-align: center;
+  text-transform: lowercase;
+
+  &::after {
+    display: none;
+  }
+
+  @media screen and (min-width: 834px) {
+    line-height: 112%;
+    letter-spacing: 0.03em;
+    text-align: start;
+  }
+}
+
+.home-contacts-list {
+  & .home-contacts-text:nth-child(1) {
+    display: flex;
+    gap: 8px;
+  }
+
+  & .home-contacts-item:nth-child(2) {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+  }
+
+  & .home-contacts-item:nth-child(3) {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+.home-contacts-item {
+  margin-bottom: 16px;
+
+  & .home-contacts-label:first-child {
+    margin-left: 8px;
+  }
+}
+
+.home-contacts-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 156%;
+  color: inherit;
+  text-transform: lowercase;
+}
+
+.home-contacts-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 156%;
+  font-style: normal;
+}
+
+.home-contacts-socials {
+  display: flex;
+
+  & .home-contacts-social-item:last-child {
+    display: none;
+  }
+}
+
+.home-socials-icon {
+  fill: var(--white);
+}
+
+.home-contacts-btn {
+  @media screen and (max-width: 834px) {
+    width: 100%;
+  }
+}
+
+.home-contacts-social-link {
+  display: flex;
+}
+
+.home-contacts-img {
+  @media screen and (min-width: 834px) {
+    width: 375px;
+  }
+}
